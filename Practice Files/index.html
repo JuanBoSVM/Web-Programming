@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" type="text/css" href="defaultStyle.css">
+    </head>
+
+    <body>
+        <form method="get">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Juan Bosco" name="name" required>
+            <br><br>
+
+            <div>
+                <label>Food Options:</label>
+                <br>
+
+                <input type="checkbox" id="pizza" name="food" value="Pizza">
+                <label for="pizza">Pizza</label>
+                <input class="quantity-input" type="number" id="pizzaQuantity" name="pizzaQuantity" min="1" max="10" placeholder="1">
+                <br>
+
+                <input type="checkbox" id="ramen" name="food" value="Ramen">
+                <label for="ramen">Ramen</label>
+                <input class="quantity-input" type="number" id="ramenQuantity" name="ramenQuantity" min="1" max="10" placeholder="1">
+                <br>
+
+                <input type="checkbox" id="pasta" name="food" value="Pasta">
+                <label for="pasta">Pasta</label>
+                <input class="quantity-input" type="number" id="pastaQuantity" name="pastaQuantity" min="1" max="10" placeholder="1">
+                <br>
+
+                <input type="checkbox" id="tacos" name="food" value="Tacos">
+                <label for="tacos">Tacos</label>
+                <input class="quantity-input" type="number" id="tacosQuantity" name="tacosQuantity" min="1" max="10" placeholder="1">
+                <br>
+            </div>
+
+            <br>
+
+            <div>
+                <label>Utensils?</label>
+                <br>
+
+                <input type="radio" id="yes" name="utensils" value="Yes" required>
+                <label for="yes">Yes Please</label>
+                <br>
+
+                <input type="radio" id="no" name="utensils" value="No" required>
+                <label for="no">No Thanks</label>
+                <br>
+            </div>
+
+            <br>
+
+            <input type="submit" value="Order">
+        </form>
+    </body>
+</html>
