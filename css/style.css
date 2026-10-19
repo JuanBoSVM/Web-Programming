@@ -1,0 +1,52 @@
+:root{
+    --main-color: #37353E;
+    --secondary-color: #44444E;
+    --accent-color: #715A5A;
+    --text-color: #D3DAD9;
+}
+
+body{
+    background-color: var(--main-color);
+}
+
+nav{
+    background-color: var(--secondary-color);
+    border: 5px solid var(--accent-color);
+    border-radius: 10px;
+}
+
+nav a{
+    color: var(--text-color);
+    text-decoration: none;
+    padding: 10px;
+    display: inline-block;
+}
+
+table.perfect{
+    font-size: 1em;
+    border: 3px solid var(--accent-color);
+    padding: 10px;
+    width: 100%;
+}
+
+p.special#first{
+    font-size: 1.5em;
+    text-decoration: underline;
+}
+
+h1.not-special#second{
+    font-weight: 100;
+    text-align: center;
+}
+
+h2.sad#third{
+    padding: 5px;
+    background-color: var(--main-color);
+}
+
+h3.happy#fourth{
+    border: 1px solid var(--accent-color);
+    color: var(--accent-color);
+}
+
+
