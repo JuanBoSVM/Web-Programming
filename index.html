@@ -1,45 +1,84 @@
+
 <!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>CSS Practice</title>
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-    </head>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <body>
-        <nav>
-            <a href="index.html">Home</a>
-        </nav>
+            <title>Web Layout</title>
 
-        <main>
-            <table class="perfect">
-                <tr>
-                    <td>
-                        <p class="special" id="first">
-                            The first table cell is special
-                        </p>                            
-                    </td>
+            <link rel="stylesheet" type="text/css" href="css/style.css">
+        </head>
 
-                    <td>
-                        <h1 class="not-special" id="second">
-                            The second table cell is not special
-                        </h1>
-                    </td>
-                </tr>
+        <body>
+            <main>
+                <h1>Title</h1>
 
-                <tr>
-                    <td>
-                        <h2 class="sad" id="third">
-                            The third table cell is sad
-                        </h2>
-                    </td>
-                    
-                    <td>
-                        <h3 class="happy" id="fourth">
-                            The fourth table cell is happy
-                        </h3>
-                    </td>
-                </tr>
-            </table>
-        </main>
-    </body>
-</html>
+                <h2>Subtitle</h2>
+
+                <div class="container">
+                    <h3>Text Line</h3>
+                    <h4>Text Line</h4>
+                </div>
+
+                <div class="form-container">
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="radio1">Radio 1</label>
+                            <input type="radio" name="radio" value="1" id="radio1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="radio2">Radio 2</label>
+                            <input type="radio" name="radio" value="2" id="radio2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="radio3">Radio 3</label>
+                            <input type="radio" name="radio" value="3" id="radio3">
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+
+                    <form method="post">
+                        <div class="form-group">
+                            <label for="form2-radio1">Radio 1</label>
+                            <input type="radio" name="radio" value="1" id="form2-radio1">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form2-radio2">Radio 2</label>
+                            <input type="radio" name="radio" value="2" id="form2-radio2">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="form2-radio3">Radio 3</label>
+                            <input type="radio" name="radio" value="3" id="form2-radio3">
+                        </div>
+
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                    <li>List Item 4</li>
+                    <li>List Item 5</li>
+                    <li>List Item 6</li>
+                    <li>List Item 7</li>
+                    <li>List Item 8</li>
+                    <li>List Item 9</li>
+                </ul>
+
+                <a href="https://www.google.com">Google Link</a>
+            </main>
+
+            <section>
+                <img src="img/canyon.jpg" alt="Canyon">
+                <img src="img/hills.jpg" alt="Hills">
+            </section>
+        </body>
+    </html>
