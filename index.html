@@ -15,22 +15,35 @@
 
             <header>
 
-                <nav class="navbar navbar-expand-md p-3">
-                    
-                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasMd" aria-controls="navbarOffcanvasMd" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    
+                <nav class="navbar navbar-expand-md">
 
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasMd" aria-labelledby="navbarOffcanvasMdLabel">
+                    <div class="container-fluid d-flex justify-content-sm-end justify-content-md-start">
                         
-                        <a class="nav-link active" href="index.html">
-    
+                        <a class="nav-link active d-sm-none d-md-block" href="index.html">
+                            
                             <img src="images/home.svg" alt="Home Icon">
                             Home
-    
+        
                         </a>
-                        
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            
+                            <span class="navbar-toggler-icon"></span>
+                            
+                        </button>
+
+                    </div>
+
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    
+                        <a class="nav-link active d-md-none" href="index.html">
+
+                            <img src="images/home.svg" alt="Home Icon">
+                            Home
+        
+                        </a>
+
                     </div>
 
                 </nav>
@@ -92,15 +105,7 @@
 
                                 <div class="input-group">
 
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="john.doe" required>
-                                    <span class="input-group-text user-select-none"> @ </span>
-                                    <select class="form-select" id="emailDomain" name="emailDomain" required>
-                                        <option value="gmail.com"> gmail </option>
-                                        <option value="hotmail.com" > hotmail </option>
-                                        <option value="yahoo.com"> yahoo </option>
-                                        <option value="outlook.com"> outlook </option>
-                                    </select>
-                                    <span class="input-group-text user-select-none"> .com </span>
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="john.doe@example.com" required>
 
                                 </div>
 
@@ -114,7 +119,7 @@
                             <div class="form-group">
 
                                 <label for="password" class="form-label"> Password </label>
-                                <input type="text" class="form-control" id="password" name="password" required>
+                                <input type="password" class="form-control" id="password" name="password" required>
 
                                 <div id="passwordHelpBlock" class="form-text user-select-none">
                                     
@@ -143,12 +148,40 @@
                         </div>
                         
 
-                        <div class="col-sm-12 col-md-6 mb-3">
+                        <div class="col-sm-12 col-md-6 mb-0">
 
-                            <div class="form-check">
+                            <div class="row justify-content-center align-items-center">
                                 
-                                <input type="checkbox" class="form-check-input me-2" id="terms-and-conditions" name="terms-and-conditions" required>
-                                <label for="terms-and-conditions" class="form-label user-select-none"> I have read and agree to the terms and conditions </label>
+                                <div class="col-12">
+
+                                    <h6 class="text-center"> Gender </h6>
+
+                                </div>
+
+                                <div class="form-check col-sm-12 col-md-6 d-flex justify-content-center">
+                                
+                                    <input class="form-check-input" type="radio" name="radioMale" id="radioMale">
+                                    <label class="form-check-label" for="radioMale"> Male </label>
+                                
+                                </div>
+                                
+                                <div class="form-check col-sm-12 col-md-6 d-flex justify-content-center">
+                                    <input class="form-check-input" type="radio" name="radioFemale" id="radioFemale">
+                                    <label class="form-check-label" for="radioFemale">
+                                    Female
+                                    </label>
+                                </div>
+                                
+                                <div class="row">
+    
+                                    <div class="form-check d-flex justify-content-center mt-3">
+                                        
+                                        <input type="checkbox" class="form-check-input me-2" id="terms-and-conditions" name="terms-and-conditions" required>
+                                        <label for="terms-and-conditions" class="form-label user-select-none"> I have read and agree to the terms and conditions </label>
+                                        
+                                    </div>
+                                    
+                                </div>
 
                             </div>
 
