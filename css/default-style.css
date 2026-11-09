@@ -20,7 +20,8 @@ html, body, main{
     height: calc(100% - var(--default-padding) * 2);
 }
 
-body{
+body,
+.offcanvas{
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
@@ -29,15 +30,22 @@ body{
 header{
     background-color: var(--secondary-color);
     border-bottom: var(--default-border);
+    
+    img{
+        filter: var(--accent-filter);
+        transform: scale(1.5);
+        margin-right: 0.5rem;
+    }
+    
+    a{
+        color: var(--text-color);
+        text-decoration: none;
+        font-size: 2rem;
+    }
 }
 
-img{
+.navbar-toggler-icon{
     filter: var(--accent-filter);
-}
-
-a{
-    color: var(--text-color);
-    text-decoration: none;
 }
 
 form{
@@ -46,19 +54,46 @@ form{
     border-radius: var(--default-border-radius);
 }
 
-input{
+input.form-control,
+span.input-group-text,
+select.form-select,
+input.form-check-input
+{
     background-color: var(--background-color);
     border: var(--default-border);
     border-radius: var(--default-border-radius);
+    color: var(--text-color);
+
+    &::placeholder {
+        color: var(--text-color);
+        font-size: 0.8rem;
+    }
+
+    &:focus {
+        background-color: var(--background-color);
+        border: var(--default-border);
+        border-color: var(--accent-color);
+        color: var(--text-color);
+        box-shadow: none;
+    }
+
+    &:checked {
+        background-color: var(--accent-color);
+        border-color: var(--accent-color);
+    }
 }
 
-input[type="radio"]{
-    accent-color: var(--border-color);
+select.form-select{
+    text-align: center;
 }
 
-button{
-    min-width: 50%;
-    max-width: 60%;
+.form-text{
+    color: var(--text-color);
+}
+
+button.btn-primary{
+    min-width: 30%;
+    max-width: 40%;
 
     background-color: var(--accent-color);
     border: var(--default-border);
@@ -66,4 +101,6 @@ button{
     color: var(--text-color);
     padding: var(--default-padding);
     transition: var(--default-transition);
+
+    font-size: 1.5rem;
 }
